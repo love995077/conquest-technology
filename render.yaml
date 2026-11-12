@@ -1,0 +1,22 @@
+# Render Blueprint: static site for Conquest Technology
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: conquest-technology
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*.css
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /*.js
+        name: Cache-Control
+        value: public, max-age=86400
