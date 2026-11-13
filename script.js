@@ -1,4 +1,4 @@
-// Conquest Technology — small progressive enhancements
+// Conquest Technologies — small progressive enhancements
 (function () {
   "use strict";
 
@@ -94,7 +94,7 @@
   // Contact form → opens the visitor's email client (no backend needed)
   const form = document.getElementById("contactForm");
   const note = document.getElementById("formNote");
-  const CONTACT_EMAIL = "info@conquesttechnology.com"; // placeholder, replace with the real address
+  const CONTACT_EMAIL = "pritamsingh@conquesttechnologies.in";
 
   if (form) {
     form.addEventListener("submit", (e) => {
